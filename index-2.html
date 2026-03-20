@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wo-Man Vitality | Manon – Soins du corps, Drainage lymphatique, Nutrition – Sathonay-Camp, Lyon</title>
+  <meta name="description" content="Manon vous accompagne à Sathonay-Camp (69) en madérothérapie, drainage lymphatique Renata França, remodelage, nutrition et technologie EMS. Réservez en ligne sur Planity." />
+  <meta name="keywords" content="madérothérapie Lyon, drainage lymphatique Renata França Sathonay-Camp, remodelage silhouette Rhône-Alpes, nutrition Lyon, EMS Lyon, Wo-Man Vitality, soins corps Caluire, bien-être Ain Rhône" />
+  <meta name="geo.region" content="FR-ARA" />
+  <meta name="geo.placename" content="Sathonay-Camp, Rhône-Alpes" />
+  <meta name="author" content="Manon – Wo-Man Vitality" />
+  <link rel="canonical" href="https://www.wo-man-vitality.fr" />
+  <meta property="og:title" content="Wo-Man Vitality | Manon – Sathonay-Camp" />
+  <meta property="og:description" content="Soins du corps, drainage lymphatique, nutrition et EMS à Sathonay-Camp. Unir l'humain dans sa globalité pour révéler le meilleur de chacun." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.wo-man-vitality.fr" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --rose:#c9a99a; --rose-light:#e8d5cf; --rose-pale:#f7efec;
+      --gold:#b89a6e; --gold-light:#d4bc96;
+      --cream:#faf7f4; --dark:#2a2220; --text:#3d3330; --muted:#8a7e7a; --white:#ffffff;
+      --radius:14px; --transition:0.45s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.2}
+    h1{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:400}
+    h2{font-size:clamp(1.9rem,3.5vw,3rem);font-weight:400}
+    h3{font-size:clamp(1.1rem,2vw,1.45rem);font-weight:500}
+    p{line-height:1.8;font-weight:300;color:var(--muted)}
+    .container{max-width:1180px;margin:0 auto;padding:0 2rem}
+    .label{display:inline-block;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-light);padding:.35em 1em;border-radius:50px;margin-bottom:1.2rem;font-weight:400}
+    .btn{display:inline-block;padding:.9em 2.4em;border-radius:50px;font-family:'Jost',sans-serif;font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;border:none;transition:var(--transition)}
+    .btn-dark{background:var(--dark);color:var(--white)}
+    .btn-dark:hover{background:#4a3e3a;transform:translateY(-2px);box-shadow:0 10px 28px rgba(42,34,32,.25)}
+    .btn-outline{background:transparent;color:var(--dark);border:1.5px solid var(--dark)}
+    .btn-outline:hover{background:var(--dark);color:var(--white);transform:translateY(-2px)}
+    .btn-rose{background:var(--rose);color:var(--white)}
+    .btn-rose:hover{background:#b08878;transform:translateY(-2px);box-shadow:0 10px 28px rgba(201,169,154,.4)}
+    .btn-white{background:var(--white);color:var(--dark)}
+    .btn-white:hover{background:var(--rose-pale);transform:translateY(-2px)}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.4rem 0;transition:var(--transition)}
+    nav.scrolled{background:rgba(250,247,244,.94);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(0,0,0,.06);padding:.9rem 0}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:400;letter-spacing:.04em;color:var(--dark)}
+    .nav-logo em{font-style:italic;color:var(--rose)}
+    .nav-links{display:flex;gap:2.5rem;align-items:center}
+    .nav-links a{font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+    .nav-links a:hover{color:var(--dark)}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:101}
+    .nav-toggle span{width:24px;height:1.5px;background:var(--dark);transition:var(--transition)}
+
+    /* HERO */
+    #hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:4rem;padding:9rem 0 5rem;position:relative;overflow:hidden}
+    .hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 55% 70% at 75% 40%,rgba(201,169,154,.13) 0%,transparent 65%),radial-gradient(ellipse 40% 50% at 20% 80%,rgba(184,154,110,.08) 0%,transparent 60%)}
+    .hero-text{position:relative;z-index:1}
+    .hero-text h1{color:var(--dark);margin-bottom:1.6rem}
+    .hero-text h1 em{font-style:italic;color:var(--rose)}
+    .hero-tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.2rem);color:var(--gold);margin-bottom:1.4rem;display:block}
+    .hero-text p{font-size:1rem;max-width:460px;margin-bottom:2.8rem}
+    .hero-ctas{display:flex;gap:1.2rem;flex-wrap:wrap}
+    .hero-visual{position:relative;z-index:1;display:flex;justify-content:center}
+    .hero-frame{width:min(420px,42vw);aspect-ratio:3/4;border-radius:50% 50% 48% 52%/60% 60% 40% 40%;background:linear-gradient(160deg,var(--rose-light) 0%,var(--rose) 50%,var(--gold-light) 100%);position:relative;overflow:hidden;box-shadow:0 40px 80px rgba(201,169,154,.35);animation:floatFrame 6s ease-in-out infinite}
+    @keyframes floatFrame{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .hero-frame-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem}
+    .hero-frame-inner .monogram{font-family:'Playfair Display',serif;font-size:5rem;font-weight:400;color:rgba(255,255,255,.9);line-height:1}
+    .hero-frame-inner .subtitle{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8);text-align:center}
+    .hero-deco{position:absolute;width:160px;height:160px;border:1px solid rgba(201,169,154,.3);border-radius:50%;top:-30px;right:-30px;animation:rotateDeco 25s linear infinite}
+    .hero-deco::before{content:'✦';position:absolute;top:50%;left:-8px;transform:translateY(-50%);color:var(--rose);font-size:.7rem}
+    @keyframes rotateDeco{to{transform:rotate(360deg)}}
+    .hero-badge{position:absolute;bottom:2rem;left:-1rem;background:var(--white);border-radius:var(--radius);padding:1rem 1.5rem;box-shadow:0 12px 32px rgba(0,0,0,.1);display:flex;align-items:center;gap:.8rem;animation:floatBadge 4s ease-in-out infinite 1s}
+    @keyframes floatBadge{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    .hero-badge .icon{font-size:1.5rem}
+    .hero-badge strong{display:block;font-size:.85rem;color:var(--dark);font-weight:500}
+    .hero-badge span{font-size:.72rem;color:var(--muted)}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible{opacity:1;transform:none}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+    section{padding:6rem 0}
+    .section-header{text-align:center;margin-bottom:4rem}
+    .section-header p{max-width:520px;margin:1rem auto 0}
+
+    /* SOINS TABS */
+    #soins{background:var(--white)}
+    .tabs{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-bottom:3rem}
+    .tab-btn{padding:.6em 1.6em;border-radius:50px;font-family:'Jost',sans-serif;font-size:.78rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border:1.5px solid var(--rose-light);color:var(--muted);background:transparent;transition:var(--transition)}
+    .tab-btn.active,.tab-btn:hover{background:var(--rose);color:var(--white);border-color:var(--rose)}
+    .tab-panel{display:none}
+    .tab-panel.active{display:block}
+    .prices-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem}
+    .price-card{background:var(--cream);border-radius:var(--radius);padding:1.6rem 1.8rem;border:1px solid var(--rose-light);display:flex;justify-content:space-between;align-items:center;transition:var(--transition)}
+    .price-card:hover{border-color:var(--rose);transform:translateY(-3px);box-shadow:0 10px 24px rgba(201,169,154,.15)}
+    .price-card .name{font-size:.9rem;font-weight:400;color:var(--text);max-width:70%;line-height:1.4}
+    .price-card .price{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--rose);white-space:nowrap}
+    .cure-card{background:var(--cream);border-radius:var(--radius);padding:1.8rem 2rem;border:1px solid var(--gold-light);transition:var(--transition)}
+    .cure-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 10px 24px rgba(184,154,110,.15)}
+    .cure-card .cure-title{font-size:.88rem;font-weight:400;color:var(--text);margin-bottom:.5rem}
+    .cure-card .cure-detail{font-size:.78rem;color:var(--muted);margin-bottom:.8rem}
+    .cure-card .cure-price{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold)}
+    .ems-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1.2rem}
+    .ems-card{background:var(--dark);color:var(--white);border-radius:var(--radius);padding:2rem 1.8rem;text-align:center;transition:var(--transition)}
+    .ems-card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(42,34,32,.3)}
+    .ems-card .ems-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-light);margin-bottom:.8rem;display:block}
+    .ems-card .ems-price{font-family:'Playfair Display',serif;font-size:2rem;color:var(--white)}
+    .ems-card .ems-sub{font-size:.78rem;color:rgba(255,255,255,.5);margin-top:.3rem}
+    .soins-cta{text-align:center;margin-top:3rem}
+
+    /* ABOUT */
+    #about{background:var(--cream)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center}
+    .about-img{width:100%;aspect-ratio:3/4;border-radius:40% 60% 55% 45%/35% 45% 55% 65%;background:linear-gradient(140deg,var(--rose-pale) 0%,var(--rose-light) 50%,var(--gold-light) 100%);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:6rem;color:rgba(201,169,154,.4)}
+    .about-visual-wrap{position:relative}
+    .about-quote-card{position:absolute;bottom:-2rem;right:-2rem;background:var(--white);border-radius:var(--radius);padding:1.5rem 2rem;max-width:280px;box-shadow:0 16px 40px rgba(0,0,0,.08);border-left:3px solid var(--rose)}
+    .about-quote-card p{font-family:'Playfair Display',serif;font-style:italic;font-size:.95rem;color:var(--text);line-height:1.6}
+    .about-quote-card .sig{font-size:.78rem;color:var(--rose);margin-top:.6rem;display:block;font-style:normal;font-family:'Jost',sans-serif;letter-spacing:.08em}
+    .about-text h2{margin-bottom:1.2rem}
+    .about-text>p{margin-bottom:1rem}
+    .about-list{list-style:none;margin:1.5rem 0 2rem}
+    .about-list li{display:flex;gap:.8rem;align-items:flex-start;margin-bottom:.8rem;font-size:.92rem}
+    .about-list li::before{content:'◆';color:var(--rose);font-size:.5rem;margin-top:6px;flex-shrink:0}
+
+    /* RDV */
+    #rdv{background:linear-gradient(135deg,var(--dark) 0%,#3d3028 100%);text-align:center;position:relative;overflow:hidden}
+    #rdv::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 30% 50%,rgba(201,169,154,.12) 0%,transparent 60%)}
+    #rdv h2{color:var(--white);margin-bottom:.8rem}
+    #rdv>.container>p{color:rgba(255,255,255,.6);max-width:460px;margin:0 auto 1rem}
+    .rdv-planity{display:inline-flex;align-items:center;gap:.8rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:1rem 2rem;margin-bottom:2.5rem;color:rgba(255,255,255,.7);font-size:.82rem}
+    .rdv-planity strong{color:var(--white)}
+    .rdv-cards{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
+    .rdv-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);padding:2rem 2.5rem;color:var(--white);backdrop-filter:blur(8px);transition:var(--transition);min-width:180px}
+    .rdv-card:hover{background:rgba(255,255,255,.14);transform:translateY(-4px)}
+    .rdv-card .icon{font-size:2.2rem;margin-bottom:.8rem}
+    .rdv-card h4{font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:.3rem}
+    .rdv-card p{font-size:.8rem;opacity:.6;margin:0}
+
+    /* BLOG */
+    #blog{background:var(--white)}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+    .blog-card{border-radius:var(--radius);overflow:hidden;border:1px solid var(--rose-light);transition:var(--transition)}
+    .blog-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(201,169,154,.2)}
+    .blog-thumb{height:190px;display:flex;align-items:center;justify-content:center;font-size:3rem}
+    .t1{background:linear-gradient(135deg,#e8d5cf,#c9a99a)}
+    .t2{background:linear-gradient(135deg,#e8e0d0,#d4bc96)}
+    .t3{background:linear-gradient(135deg,#d0d8e8,#a8b5c4)}
+    .blog-body{padding:1.8rem;background:var(--cream)}
+    .blog-cat{font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;display:block}
+    .blog-body h3{font-size:1.05rem;margin-bottom:.6rem;color:var(--dark)}
+    .blog-body p{font-size:.85rem}
+    .blog-footer{display:flex;justify-content:space-between;align-items:center;margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--rose-light);font-size:.76rem;color:var(--muted)}
+    .read-more{color:var(--rose);font-weight:500;display:flex;align-items:center;gap:.3rem;transition:gap .2s}
+    .read-more:hover{gap:.6rem}
+
+    /* FOOTER */
+    footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4rem 0 2rem}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;margin-bottom:3rem}
+    .footer-logo{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--white);margin-bottom:1rem;display:block}
+    .footer-logo em{font-style:italic;color:var(--rose)}
+    footer p{font-size:.86rem;line-height:1.7}
+    footer h4{font-family:'Playfair Display',serif;font-weight:400;font-size:1rem;color:var(--white);margin-bottom:1rem}
+    footer ul{list-style:none}
+    footer ul li{margin-bottom:.6rem}
+    footer ul li a{font-size:.83rem;transition:color .2s}
+    footer ul li a:hover{color:var(--rose-light)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.76rem;flex-wrap:wrap;gap:.5rem}
+    .seo-tag{color:var(--gold-light);font-size:.72rem}
+
+    /* CHATBOT */
+    #chat-btn{position:fixed;bottom:2rem;right:2rem;width:58px;height:58px;border-radius:50%;background:var(--rose);color:var(--white);border:none;font-size:1.4rem;cursor:pointer;box-shadow:0 8px 24px rgba(201,169,154,.5);display:flex;align-items:center;justify-content:center;transition:var(--transition);z-index:200}
+    #chat-btn:hover{background:#b08878;transform:scale(1.08)}
+    .chat-notif{position:absolute;top:-2px;right:-2px;width:13px;height:13px;background:var(--gold);border-radius:50%;border:2px solid var(--cream)}
+    #chat-win{position:fixed;bottom:5.5rem;right:2rem;width:360px;max-height:520px;background:var(--white);border-radius:20px;box-shadow:0 28px 70px rgba(0,0,0,.15);display:flex;flex-direction:column;z-index:200;overflow:hidden;transform:scale(.88) translateY(20px);opacity:0;pointer-events:none;transition:var(--transition)}
+    #chat-win.open{transform:scale(1) translateY(0);opacity:1;pointer-events:all}
+    .chat-hdr{background:linear-gradient(135deg,var(--rose) 0%,var(--gold) 100%);padding:1.2rem 1.5rem;display:flex;align-items:center;gap:.8rem;color:var(--white)}
+    .chat-av{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+    .chat-hdr-txt strong{display:block;font-size:.88rem;font-weight:500}
+    .chat-hdr-txt span{font-size:.73rem;opacity:.8}
+    .chat-x{margin-left:auto;background:none;border:none;color:white;cursor:pointer;font-size:1.1rem;opacity:.7}
+    .chat-x:hover{opacity:1}
+    .chat-msgs{flex:1;overflow-y:auto;padding:1.2rem;display:flex;flex-direction:column;gap:.8rem}
+    .msg{max-width:84%;padding:.75rem 1rem;border-radius:14px;font-size:.86rem;line-height:1.55}
+    .msg.bot{background:var(--rose-pale);color:var(--text);border-radius:4px 14px 14px 14px;align-self:flex-start}
+    .msg.user{background:var(--rose);color:var(--white);border-radius:14px 14px 4px 14px;align-self:flex-end}
+    .msg.typing{display:flex;gap:4px;align-items:center;padding:.9rem 1rem}
+    .msg.typing span{width:7px;height:7px;border-radius:50%;background:var(--rose);animation:blink 1.2s infinite}
+    .msg.typing span:nth-child(2){animation-delay:.2s}
+    .msg.typing span:nth-child(3){animation-delay:.4s}
+    @keyframes blink{0%,80%,100%{opacity:.3}40%{opacity:1}}
+    .chat-foot{padding:1rem;border-top:1px solid var(--rose-pale);display:flex;gap:.6rem}
+    .chat-foot input{flex:1;border:1.5px solid var(--rose-pale);border-radius:50px;padding:.65rem 1.1rem;font-family:'Jost',sans-serif;font-size:.85rem;outline:none;color:var(--text);background:var(--cream);transition:border-color .2s}
+    .chat-foot input:focus{border-color:var(--rose)}
+    .chat-send{width:40px;height:40px;border-radius:50%;background:var(--rose);color:white;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--transition)}
+    .chat-send:hover{background:#b08878}
+
+    /* RESPONSIVE */
+    @media(max-width:920px){
+      #hero{grid-template-columns:1fr;text-align:center;padding-top:7rem}
+      .hero-visual{display:none}
+      .hero-ctas{justify-content:center}
+      .hero-text p{margin:0 auto 2.5rem}
+      .about-grid{grid-template-columns:1fr;gap:3rem}
+      .about-visual-wrap{display:none}
+      .blog-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:1fr;gap:2rem}
+      .nav-links{display:none;flex-direction:column;position:fixed;inset:0;background:var(--cream);align-items:center;justify-content:center;gap:2.5rem}
+      .nav-links.open{display:flex}
+      .nav-toggle{display:flex}
+    }
+    @media(max-width:580px){
+      .blog-grid{grid-template-columns:1fr}
+      #chat-win{width:calc(100vw - 2rem);right:1rem}
+      .prices-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">Wo·Man <em>Vitality</em></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#soins" onclick="closeNav()">Soins & Tarifs</a>
+      <a href="#about" onclick="closeNav()">À propos</a>
+      <a href="#blog" onclick="closeNav()">Blog</a>
+      <a href="https://www.planity.com/woman-vitality-69580-sathonay-camp" target="_blank" class="btn btn-rose">Réserver</a>
+    </div>
+    <div class="nav-toggle" id="navToggle" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="container" style="display:contents">
+    <div class="hero-text container reveal">
+      <span class="label">Sathonay-Camp · Rhône-Alpes</span>
+      <h1>Révélez le<br><em>meilleur</em><br>de vous.</h1>
+      <em class="hero-tagline">"Unir l'humain dans sa globalité pour révéler le meilleur de chacun."</em>
+      <p>Soins du corps, drainage lymphatique Renata França, remodelage de silhouette, nutrition et technologie EMS — un accompagnement global et bienveillant avec Manon.</p>
+      <div class="hero-ctas">
+        <a href="https://www.planity.com/woman-vitality-69580-sathonay-camp" target="_blank" class="btn btn-dark">Prendre rendez-vous</a>
+        <a href="#soins" class="btn btn-outline">Découvrir les soins</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal d2">
+      <div class="hero-frame">
+        <div class="hero-frame-inner">
+          <span class="monogram">M</span>
+          <span class="subtitle">Manon · Wo-Man Vitality</span>
+        </div>
+      </div>
+      <div class="hero-deco"></div>
+      <div class="hero-badge">
+        <span class="icon">🌿</span>
+        <div><strong>Renata França certifiée</strong><span>Drainage & Remodelage</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOINS & TARIFS -->
+<section id="soins">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Soins & Tarifs</span>
+      <h2>Des soins sur-mesure<br>pour votre bien-être</h2>
+      <p>Chaque soin est pensé pour vous accompagner dans votre transformation, en douceur et en profondeur.</p>
+    </div>
+    <div class="tabs reveal">
+      <button class="tab-btn active" onclick="switchTab(event,'corps')">Soin du corps</button>
+      <button class="tab-btn" onclick="switchTab(event,'visage')">Soin du visage</button>
+      <button class="tab-btn" onclick="switchTab(event,'cures')">Les cures</button>
+      <button class="tab-btn" onclick="switchTab(event,'nutrition')">Nutrition</button>
+      <button class="tab-btn" onclick="switchTab(event,'ems')">Technologie EMS</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-corps">
+      <div class="prices-grid">
+        <div class="price-card"><span class="name">Madérothérapie jambes & fesses</span><span class="price">90 €</span></div>
+        <div class="price-card"><span class="name">Madérothérapie ventre & taille</span><span class="price">60 €</span></div>
+        <div class="price-card"><span class="name">Madérothérapie corps complet</span><span class="price">115 €</span></div>
+        <div class="price-card"><span class="name">Drainage lymphatique Renata França</span><span class="price">150 €</span></div>
+        <div class="price-card"><span class="name">Remodelage Renata França</span><span class="price">150 €</span></div>
+        <div class="price-card"><span class="name">Soin signature : Divine Corps</span><span class="price">160 €</span></div>
+        <div class="price-card"><span class="name">Soin énergétique 1 zone corps</span><span class="price">45 €</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-visage">
+      <div class="prices-grid">
+        <div class="price-card"><span class="name">Madérothérapie du visage</span><span class="price">45 €</span></div>
+        <div class="price-card"><span class="name">Soin de peau Divine en un éclat</span><span class="price">50 €</span></div>
+        <div class="price-card"><span class="name">Soin signature : Divine Visage</span><span class="price">99 €</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-cures">
+      <div class="prices-grid">
+        <div class="cure-card"><div class="cure-title">Méthode Renata França</div><div class="cure-detail">4 séances + 1 offerte</div><div class="cure-price">600 €</div></div>
+        <div class="cure-card"><div class="cure-title">Madérothérapie jambes & fesses</div><div class="cure-detail">6 séances + 1 offerte</div><div class="cure-price">540 €</div></div>
+        <div class="cure-card"><div class="cure-title">Madérothérapie ventre & taille</div><div class="cure-detail">6 séances + 1 offerte</div><div class="cure-price">360 €</div></div>
+        <div class="cure-card"><div class="cure-title">Madérothérapie corps complet</div><div class="cure-detail">6 séances + 1 offerte</div><div class="cure-price">690 €</div></div>
+        <div class="cure-card"><div class="cure-title">Madérothérapie visage</div><div class="cure-detail">6 séances + 1 offerte</div><div class="cure-price">300 €</div></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-nutrition">
+      <div class="prices-grid">
+        <div class="price-card"><span class="name">Bilan COMPLET</span><span class="price">90 €</span></div>
+        <div class="price-card"><span class="name">Bilan GNIOCHECK</span><span class="price">189 €</span></div>
+        <div class="price-card"><span class="name">Suivi nutrition</span><span class="price">45 €</span></div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-ems">
+      <div class="ems-grid">
+        <div class="ems-card"><span class="ems-label">Séance unique</span><div class="ems-price">50 €</div><div class="ems-sub">Hors forfait</div></div>
+        <div class="ems-card"><span class="ems-label">1 mois · 4 séances</span><div class="ems-price">160 €</div><div class="ems-sub">40 € / séance</div></div>
+        <div class="ems-card"><span class="ems-label">3 mois · 12 séances</span><div class="ems-price">445 €</div><div class="ems-sub">152 € / mois · 35 € / séance</div></div>
+        <div class="ems-card"><span class="ems-label">6 mois · 26 séances</span><div class="ems-price">832 €</div><div class="ems-sub">139 € / mois · 32 € / séance</div></div>
+        <div class="ems-card"><span class="ems-label">12 mois · 52 séances</span><div class="ems-price">1 560 €</div><div class="ems-sub">130 € / mois · 30 € / séance</div></div>
+      </div>
+    </div>
+
+    <div class="soins-cta reveal">
+      <a href="https://www.planity.com/woman-vitality-69580-sathonay-camp" target="_blank" class="btn btn-rose">Réserver mon soin sur Planity</a>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual-wrap reveal">
+        <div class="about-img">✦</div>
+        <div class="about-quote-card">
+          <p>"Unir l'humain dans sa globalité pour révéler le meilleur de chacun."</p>
+          <span class="sig">— Manon, Wo-Man Vitality</span>
+        </div>
+      </div>
+      <div class="about-text reveal d2">
+        <span class="label">À propos de Manon</span>
+        <h2>Une approche globale,<br>humaine et bienveillante</h2>
+        <p>Je crois profondément que chaque personne porte en elle les ressources nécessaires à sa transformation. Mon rôle est de créer l'espace et les conditions pour que ce potentiel s'exprime pleinement.</p>
+        <p>Installée à <strong>Sathonay-Camp</strong>, au cœur de la métropole lyonnaise, je propose des soins du corps, du visage, un accompagnement nutritionnel et la technologie EMS — une approche complète pour retrouver vitalité et confiance.</p>
+        <ul class="about-list">
+          <li>Certifiée méthode Renata França (drainage & remodelage)</li>
+          <li>Spécialisée en madérothérapie et soins énergétiques</li>
+          <li>Accompagnement nutritionnel personnalisé</li>
+          <li>Consultation en cabinet à Sathonay-Camp ou en visioconférence</li>
+        </ul>
+        <a href="https://www.planity.com/woman-vitality-69580-sathonay-camp" target="_blank" class="btn btn-dark">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RDV -->
+<section id="rdv">
+  <div class="container" style="position:relative;z-index:1">
+    <div class="reveal">
+      <span class="label" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:var(--gold-light)">Réservation</span>
+      <h2>Prête à commencer<br>votre transformation ?</h2>
+      <p>Réservez directement en ligne via Planity, disponible 24h/24.</p>
+    </div>
+    <div class="rdv-planity reveal d1">
+      📍 <span>Cabinet à <strong>Sathonay-Camp (69580)</strong> · Rhône-Alpes</span>
+    </div>
+    <div class="rdv-cards reveal d2">
+      <div class="rdv-card"><div class="icon">🏥</div><h4>En cabinet</h4><p>Sathonay-Camp · Sur RDV</p></div>
+      <div class="rdv-card"><div class="icon">💻</div><h4>En visio</h4><p>Nutrition · Suivi · Bilan</p></div>
+    </div>
+    <a href="https://www.planity.com/woman-vitality-69580-sathonay-camp" target="_blank" class="btn btn-white reveal d3">Voir les créneaux disponibles sur Planity →</a>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label">Blog & Conseils</span>
+      <h2>Ressources pour votre vitalité</h2>
+      <p>Articles et conseils pratiques autour de la nutrition, du lymphatique et du bien-être.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <div class="blog-thumb t1">💆</div>
+        <div class="blog-body">
+          <span class="blog-cat">Drainage lymphatique</span>
+          <h3>La méthode Renata França : qu'est-ce que c'est ?</h3>
+          <p>Découvrez cette technique brésilienne reconnue mondialement pour ses effets sur la circulation lymphatique...</p>
+          <div class="blog-footer"><span>Mars 2025</span><a href="#" class="read-more">Lire →</a></div>
+        </div>
+      </article>
+      <article class="blog-card reveal d1">
+        <div class="blog-thumb t2">🥗</div>
+        <div class="blog-body">
+          <span class="blog-cat">Nutrition</span>
+          <h3>Bilan GNIOCHECK : pourquoi le faire ?</h3>
+          <p>Le bilan GNIOCHECK permet d'analyser en profondeur vos besoins nutritionnels. Comment ça marche...</p>
+          <div class="blog-footer"><span>Fév. 2025</span><a href="#" class="read-more">Lire →</a></div>
+        </div>
+      </article>
+      <article class="blog-card reveal d2">
+        <div class="blog-thumb t3">⚡</div>
+        <div class="blog-body">
+          <span class="blog-cat">Technologie EMS</span>
+          <h3>EMS : la musculation intelligente pour sculpter votre corps</h3>
+          <p>La technologie EMS révolutionne le travail musculaire. Quels résultats attendre et pour qui ?</p>
+          <div class="blog-footer"><span>Jan. 2025</span><a href="#" class="read-more">Lire →</a></div>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="#" class="btn btn-outline">Voir tous les articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">Wo·Man <em>Vitality</em></span>
+        <p>Soins du corps, drainage lymphatique Renata França, madérothérapie, nutrition et EMS à Sathonay-Camp (69580), Rhône-Alpes.</p>
+        <p class="seo-tag" style="margin-top:.8rem">📍 Sathonay-Camp · Lyon · Caluire-et-Cuire · Ain · Rhône-Alpes</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#soins">Soins & Tarifs</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="https://www.planity.com/woman-vitality-69580-sathonay-camp" target="_blank">Réserver sur Planity</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">CGV</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Wo-Man Vitality – Manon · Tous droits réservés</span>
+      <span>Fait avec ♥ à Sathonay-Camp</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<button id="chat-btn" onclick="toggleChat()">
+  🌸
+  <div class="chat-notif"></div>
+</button>
+<div id="chat-win">
+  <div class="chat-hdr">
+    <div class="chat-av">🌿</div>
+    <div class="chat-hdr-txt">
+      <strong>Assistante Wo-Man Vitality</strong>
+      <span>Répond instantanément</span>
+    </div>
+    <button class="chat-x" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-msgs" id="chatMsgs">
+    <div class="msg bot">Bonjour ! 👋 Je suis l'assistante virtuelle de Manon chez Wo-Man Vitality. Comment puis-je vous aider ?</div>
+    <div class="msg bot">Posez-moi vos questions sur les soins, les tarifs ou la prise de rendez-vous. 🌸</div>
+  </div>
+  <div class="chat-foot">
+    <input type="text" id="chatIn" placeholder="Votre question…" onkeydown="if(event.key==='Enter')sendMsg()" />
+    <button class="chat-send" onclick="sendMsg()">➤</button>
+  </div>
+</div>
+
+<script>
+  window.addEventListener('scroll',()=>{
+    document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+  });
+  function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
+  function closeNav(){document.getElementById('navLinks').classList.remove('open')}
+
+  const obs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+  },{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+  function switchTab(e,id){
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.getElementById('tab-'+id).classList.add('active');
+    e.target.classList.add('active');
+  }
+
+  let chatOpen=false;
+  function toggleChat(){
+    chatOpen=!chatOpen;
+    document.getElementById('chat-win').classList.toggle('open',chatOpen);
+    document.querySelector('.chat-notif').style.display=chatOpen?'none':'block';
+    if(chatOpen)document.getElementById('chatIn').focus();
+  }
+
+  async function sendMsg(){
+    const input=document.getElementById('chatIn');
+    const text=input.value.trim();
+    if(!text)return;
+    input.value='';
+    const msgs=document.getElementById('chatMsgs');
+
+    const userDiv=document.createElement('div');
+    userDiv.className='msg user';
+    userDiv.textContent=text;
+    msgs.appendChild(userDiv);
+
+    const typing=document.createElement('div');
+    typing.className='msg bot typing';
+    typing.innerHTML='<span></span><span></span><span></span>';
+    msgs.appendChild(typing);
+    msgs.scrollTop=msgs.scrollHeight;
+
+    try{
+      const res=await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          model:'claude-sonnet-4-20250514',
+          max_tokens:1000,
+          system:`Tu es l'assistante virtuelle bienveillante de Manon, praticienne chez Wo-Man Vitality à Sathonay-Camp (69580), Rhône-Alpes.
+
+Manon propose :
+SOINS DU CORPS : Madérothérapie jambes & fesses (90€), ventre & taille (60€), corps complet (115€), Drainage lymphatique Renata França (150€), Remodelage Renata França (150€), Soin signature Divine Corps (160€), Soin énergétique 1 zone (45€)
+SOINS DU VISAGE : Madérothérapie visage (45€), Soin Divine en un éclat (50€), Soin signature Divine Visage (99€)
+CURES : Renata França 4+1 offerte (600€), Madérothérapie jambes 6+1 (540€), ventre 6+1 (360€), corps 6+1 (690€), visage 6+1 (300€)
+NUTRITION : Bilan COMPLET (90€), Bilan GNIOCHECK (189€), Suivi nutrition (45€)
+EMS : 1 séance (50€), 1 mois/4 séances (160€), 3 mois/12 (445€), 6 mois/26 (832€), 12 mois/52 (1560€)
+Réservation Planity : https://www.planity.com/woman-vitality-69580-sathonay-camp
+
+Réponds en français, de façon chaleureuse et concise (2-3 phrases max). Pour les RDV renvoie vers Planity. Ne donne pas de conseils médicaux.`,
+          messages:[{role:'user',content:text}]
+        })
+      });
+      const data=await res.json();
+      typing.remove();
+      const botDiv=document.createElement('div');
+      botDiv.className='msg bot';
+      botDiv.textContent=data.content?.[0]?.text||"Désolée, une erreur s'est produite. Contactez Manon directement !";
+      msgs.appendChild(botDiv);
+    }catch(e){
+      typing.remove();
+      const err=document.createElement('div');
+      err.className='msg bot';
+      err.textContent="Une erreur s'est produite. Réessayez ou contactez Manon via Planity.";
+      msgs.appendChild(err);
+    }
+    msgs.scrollTop=msgs.scrollHeight;
+  }
+</script>
+</body>
+</html>
